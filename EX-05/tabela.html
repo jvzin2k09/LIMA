@@ -8,7 +8,7 @@
 <body>
     <h1>Classificação</h1>
 
-    <table border="1" cellpadding="10">
+    <table border="1" cellpadding="10"
         <thead>
             <tr>
                 <th>Ordem</th>
@@ -55,5 +55,79 @@
                 <td><h1>3</h1></td>
                 <td><h1>3</h1></td>
             </tr>
+        </table>
+
+<br><br>
+
+    <h1>Responda</h1>
+        <form method="POST" action="processar.php">
+            <fieldset>
+                <legend>Dados de seu Time</legend>
+    
+                <label for="nome">Qual seu time:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br><br>
+    
+                <label for="email">Seu time tem mundial:</label>
+                <input type="text" id="email" name="email" required>
+    
+                <br><br>
+    
+                <label for="idade">Quantos titulos brasileiro seu time possui:</label>
+                <input type="number" id="idade" name="idade" min="18" max="120">
+    
+                <br><br>
+    
+                <label for="senha">Deixe seu comentário:</label>
+                <input type="text" id="senha" name="senha" required>
+            </fieldset>
+    
+            <br><br>
+    
+            <fieldset>
+                <legend>Estou feliz</legend>
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Sou Feliz
+                </label>
+
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Não sou feliz
+                </label>
+
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Sou muito alegre
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pagamento</legend>
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Cartão de Crédito
+                </label>
+
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Cartão de Debito
+                </label>
+
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Pix
+                </label>
+
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Vale Bombom
+                </label>
+            </fieldset>
+    
+            <br><br>
+    
+            <button type="submit">Enviar</button>
+        </form>
 </body>
 </html>
